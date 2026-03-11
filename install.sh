@@ -25,6 +25,9 @@ print_msg "$GREEN" "Installation successful."
 # Switch to superuser
 su
 
+# Export path
+export PATH=$PATH:/data/data/com.termux/files/usr/bin:/data/data/com.termux/files/usr/sbin
+
 # Create directories and download Ubuntu base
 print_msg "$BLUE" "Setting up Ubuntu environment..."
 mkdir -p /data/local/tmp/chrootubuntu
